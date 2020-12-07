@@ -1,0 +1,7 @@
+C:\Users\kato_\Projects\modneat-cs-project\modneat-cs-project\bin\Debug\modneat-cs-project.exe.config
+C:\Users\kato_\Projects\modneat-cs-project\modneat-cs-project\bin\Debug\modneat-cs-project.exe
+C:\Users\kato_\Projects\modneat-cs-project\modneat-cs-project\bin\Debug\modneat-cs-project.pdb
+C:\Users\kato_\Projects\modneat-cs-project\modneat-cs-project\obj\Debug\modneat-cs-project.csprojAssemblyReference.cache
+C:\Users\kato_\Projects\modneat-cs-project\modneat-cs-project\obj\Debug\modneat-cs-project.csproj.CoreCompileInputs.cache
+C:\Users\kato_\Projects\modneat-cs-project\modneat-cs-project\obj\Debug\modneat-cs-project.exe
+C:\Users\kato_\Projects\modneat-cs-project\modneat-cs-project\obj\Debug\modneat-cs-project.pdb
