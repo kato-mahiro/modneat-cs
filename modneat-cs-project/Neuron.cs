@@ -36,7 +36,7 @@ namespace modneat_cs_project
                 }
                 else
                 {
-                    Console.WriteLine("だめです");
+                    Console.WriteLine("ERROR: 修飾ニューロンにはactivate_valをセットできません。");
                 }
             }
         }
@@ -51,7 +51,7 @@ namespace modneat_cs_project
                 }
                 else
                 {
-                    Console.WriteLine("だめです");
+                    Console.WriteLine("ERROR: 修飾ニューロンでないニューロンには modulate_valをセットできません。");
                 }
             }
         }
