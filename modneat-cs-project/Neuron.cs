@@ -14,7 +14,7 @@ namespace modneat_cs_project
         float _activate_val;
         float _modulate_val;
 
-        float _bias;
+        public float bias;
 
         public Neuron(NeuronType type)
         {
@@ -22,7 +22,7 @@ namespace modneat_cs_project
             _activate_val = 0.0F;
             _modulate_val = 0.0F;
             var random = new System.Random();
-            _bias = (random.Next(-100, 100));
+            bias = (random.Next(-100, 100));
         }
 
         public float activate_val
