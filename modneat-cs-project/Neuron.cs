@@ -6,12 +6,14 @@ using System.Threading.Tasks;
 
 namespace modneat_cs_project
 {
-    class Neuron{
-        public enum NeuronType{input, output, normal, modulation}
+    class Neuron
+    {
+        public enum NeuronType { input, output, normal, modulation }
 
         NeuronType _neuron_type;
         float _activate_val;
         float _modulate_val;
+
         float _bias;
 
         public Neuron(NeuronType type)
@@ -20,25 +22,32 @@ namespace modneat_cs_project
             _activate_val = 0.0F;
             _modulate_val = 0.0F;
             var random = new System.Random();
-            _bias = (random.Next(-100,100));
+            _bias = (random.Next(-100, 100));
         }
 
-        public float activate_val{
+        public float activate_val
+        {
             get { return _activate_val; }
-            set{
-                if(_neuron_type != NeuronType.modulation){
+            set
+            {
+                if (_neuron_type != NeuronType.modulation)
+                {
                     _activate_val = value;
-                }else{
+                }
+                else
+                {
                     Console.WriteLine("だめです");
                 }
             }
         }
     }
 
-    class Test{
-        static void Main(){
+    class Test
+    {
+        static void Main()
+        {
             Console.WriteLine("aa");
-            Console.ReadLine(); 
+            Console.ReadLine();
         }
     }
 }
