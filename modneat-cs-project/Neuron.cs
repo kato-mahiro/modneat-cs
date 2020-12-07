@@ -10,15 +10,16 @@ namespace modneat_cs_project
     {
         public enum NeuronType { input, output, normal, modulation }
 
-        NeuronType _neuron_type;
+        public NeuronType neuron_type;
+        public float bias;
+
         float _activate_val;
         float _modulate_val;
 
-        public float bias;
 
         public Neuron(NeuronType type)
         {
-            _neuron_type = type;
+            neuron_type = type;
             _activate_val = 0.0F;
             _modulate_val = 0.0F;
             var random = new System.Random();
@@ -30,7 +31,7 @@ namespace modneat_cs_project
             get { return _activate_val; }
             set
             {
-                if (_neuron_type != NeuronType.modulation)
+                if (neuron_type != NeuronType.modulation)
                 {
                     _activate_val = value;
                 }
@@ -45,7 +46,7 @@ namespace modneat_cs_project
             get { return _modulate_val; }
             set
             {
-                if (_neuron_type == NeuronType.modulation)
+                if (neuron_type == NeuronType.modulation)
                 {
                     _modulate_val = value;
                 }
@@ -61,8 +62,13 @@ namespace modneat_cs_project
     {
         static void Main()
         {
-            Console.WriteLine("aa");
+            Neuron n1 = new Neuron(Neuron.NeuronType.normal);
+            Console.Write("a:{0}, m:{1},  b:{2}, type:{3}", n1.activate_val, n1.modulate_val, n1.bias, n1.neuron_type);
+            Neuron n2 = new Neuron(Neuron.NeuronType.input);
+            Neuron n3 = new Neuron(Neuron.NeuronType.output);
+            Neuron n4 = new Neuron(Neuron.NeuronType.modulation);
             Console.ReadLine();
+
         }
     }
 }
