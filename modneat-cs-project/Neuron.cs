@@ -40,6 +40,21 @@ namespace modneat_cs_project
                 }
             }
         }
+        public float modulate_val
+        {
+            get { return _modulate_val; }
+            set
+            {
+                if (_neuron_type == NeuronType.modulation)
+                {
+                    _modulate_val = value;
+                }
+                else
+                {
+                    Console.WriteLine("だめです");
+                }
+            }
+        }
     }
 
     class Test
