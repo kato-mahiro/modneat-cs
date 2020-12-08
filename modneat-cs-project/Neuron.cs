@@ -23,7 +23,7 @@ namespace modneat_cs_project
             _activate_val = 0.0F;
             _modulate_val = 0.0F;
             var random = new System.Random();
-            bias = (random.Next(-100, 100));
+            bias = ((float)random.Next(-10000, 10000) / 10000.0f);
         }
 
         public float activate_val
