@@ -17,13 +17,13 @@ namespace modneat_cs_project
         float _modulate_val;
 
 
-        public Neuron(NeuronType type)
+        public Neuron(NeuronType type, int seed)
         {
             neuron_type = type;
             _activate_val = 0.0F;
             _modulate_val = 0.0F;
-            var random = new System.Random();
-            bias = ((float)random.Next(-10000, 10000) / 10000.0f);
+            var random = new System.Random(seed);
+            bias = ((float)random.Next(-100_000, 100_000) / 100_100.0f);
         }
 
         public float activate_val
