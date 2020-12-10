@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.Diagnostics;
 
 namespace modneat_cs_project
 {
@@ -30,6 +29,7 @@ namespace modneat_cs_project
             modulation.activate_val = 1.0f;
             modulation.modulate_val = 1.0f;
             Console.Write("a:{0}, m:{1},  b:{2}, type:{3}\n", modulation.activate_val, modulation.modulate_val, modulation.bias, modulation.neuron_type);
+            Console.ReadLine();
         }
     }
 }

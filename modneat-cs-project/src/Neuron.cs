@@ -57,5 +57,4 @@ namespace modneat_cs_project
             }
         }
     }
-
 }
