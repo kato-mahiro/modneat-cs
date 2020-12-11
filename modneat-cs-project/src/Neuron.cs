@@ -10,8 +10,8 @@ namespace modneat_cs_project
     {
         public enum NeuronType { input, output, normal, modulation }
 
-        public NeuronType neuron_type;
-        public float bias;
+        public readonly NeuronType neuron_type;
+        public readonly float bias;
 
         float _activate_val;
         float _modulate_val;
