@@ -25,6 +25,9 @@ namespace modneat_cs_project
             this.output_id = output_id;
 
             var random = new System.Random(seed);
+            var ini = new IniFile("../setting.ini");
+            var read_val = ini.Read("section1", "test");
+            Console.Write("‚ ‚ :{0} ", read_val);
             this.weight = ((float)random.Next(-100_000, 100_000) / 100_100.0f);
             this.initial_weight = this.weight;
         }
