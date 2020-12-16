@@ -3,3 +3,4 @@ Properties/
 bin/
 obj/
 *.exe
+InFile.cs
