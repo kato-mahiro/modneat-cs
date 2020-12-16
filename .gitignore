@@ -3,4 +3,4 @@ Properties/
 bin/
 obj/
 *.exe
-*/InFile.cs
+modneat-cs-project/src/InFile.cs
