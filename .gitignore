@@ -3,4 +3,5 @@ Properties/
 bin/
 obj/
 *.exe
+*.swp
 InFile.cs
