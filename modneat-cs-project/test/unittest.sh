@@ -1,7 +1,7 @@
 #!bin/bash
 
 # build 
-mcs /out:Test$1.exe ../src/$1.cs Test$1.cs
+mcs /out:Test$1.exe ../src/$1.cs ../src/ReadIni.cs Test$1.cs
 
 if [ $? = 0 ]; then
     echo ' ### Build Success. ### '
