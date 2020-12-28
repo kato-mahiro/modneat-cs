@@ -22,12 +22,10 @@ namespace modneat_cs_project
             neuron_type = type;
             _activate_val = 0.0F;
             _modulate_val = 0.0F;
-            var random = new System.Random(seed);
-            bias = ((float)random.Next(-100_000, 100_000) / 100_100.0f);
             var ini = new IniFile("../setting.ini");
-            var s1 = ini.ReadInt("network size", "input_num");
-            Console.WriteLine(s1);
-            Console.WriteLine(s1.GetType());
+            float range = ini.ReadFloat("network param", "bias_range");
+            var random = new System.Random(seed);
+            bias = ((float)random.Next(-100_000, 100_000) / (100_100) * range);
         }
 
         public float activate_val
