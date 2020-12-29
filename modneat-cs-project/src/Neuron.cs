@@ -17,15 +17,20 @@ namespace modneat_cs_project
         float _modulate_val;
 
 
-        public Neuron(NeuronType type, int seed)
+        public Neuron(NeuronType type)
         {
             neuron_type = type;
             _activate_val = 0.0F;
             _modulate_val = 0.0F;
             var ini = new IniFile("../setting.ini");
             float range = ini.ReadFloat("network param", "bias_range");
-            var random = new System.Random(seed);
-            bias = ((float)random.Next(-100_000, 100_000) / (100_100) * range);
+            var randomByte = new byte[4];
+            using (var rng = new System.Security.Cryptography.RNGCryptoServiceProvider())
+            {
+                rng.GetBytes(randomByte);
+                int random_int = System.BitConverter.ToInt32(randomByte, 0) % 1_000_000;
+                bias = (float)(random_int * range) / (1_000_000);
+            }
         }
 
         public float activate_val

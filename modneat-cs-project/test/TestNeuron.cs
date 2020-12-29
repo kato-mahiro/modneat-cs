@@ -10,20 +10,19 @@ namespace modneat_cs_project
     {
         static void Main()
         {
-            int seed = Environment.TickCount;
-            Neuron normal = new Neuron(Neuron.NeuronType.normal, seed++);
+            Neuron normal = new Neuron(Neuron.NeuronType.normal);
             normal.activate_val = 1.0f;
             Console.Write("a:{0}, m:{1},  b:{2}, type:{3}\n", normal.activate_val, normal.modulate_val, normal.bias, normal.neuron_type);
 
-            Neuron input = new Neuron(Neuron.NeuronType.input, seed++);
+            Neuron input = new Neuron(Neuron.NeuronType.input);
             input.activate_val = 1.0f;
             Console.Write("a:{0}, m:{1},  b:{2}, type:{3}\n", input.activate_val, input.modulate_val, input.bias, input.neuron_type);
 
-            Neuron output = new Neuron(Neuron.NeuronType.output, seed++);
+            Neuron output = new Neuron(Neuron.NeuronType.output);
             output.activate_val = 1.0f;
             Console.Write("a:{0}, m:{1},  b:{2}, type:{3}\n", output.activate_val, output.modulate_val, output.bias, input.neuron_type);
 
-            Neuron modulation = new Neuron(Neuron.NeuronType.modulation, seed++);
+            Neuron modulation = new Neuron(Neuron.NeuronType.modulation);
             modulation.modulate_val = 1.0f;
             Console.Write("a:{0}, m:{1},  b:{2}, type:{3}\n", modulation.activate_val, modulation.modulate_val, modulation.bias, modulation.neuron_type);
 

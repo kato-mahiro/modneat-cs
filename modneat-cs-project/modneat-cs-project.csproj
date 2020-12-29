@@ -46,6 +46,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="src\Connection.cs" />
     <Compile Include="src\Neuron.cs" />
+    <Compile Include="src\ReadIni.cs" />
     <Compile Include="test\TestConnection.cs" />
     <Compile Include="test\TestNeuron.cs" />
   </ItemGroup>
