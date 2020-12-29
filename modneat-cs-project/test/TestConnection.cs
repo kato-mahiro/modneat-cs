@@ -10,8 +10,7 @@ namespace modneat_cs_project
     {
         static void Main()
         {
-            int seed = Environment.TickCount;
-            Connection c1 = new Connection(1, 2, 3, seed);
+            Connection c1 = new Connection(1, 2, 3);
             Console.Write("connection_id: {0}, is_valid: {1}, input_id: {2}, output_id: {3}, weight: {4}, initial_weight: {5} \n",
                                 c1.connection_id, c1.is_valid, c1.input_id, c1.output_id, c1.weight, c1.initial_weight);
 
